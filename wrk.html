@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Pets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WRK</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="produto-container">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/150" alt="Cama para Pets">
+                    <h3>Cama Confortável</h3>
+                    <p>R$ 99,90</p>
+                    <button onclick="adicionarAoCarrinho('Cama Confortável', 99.90)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/150" alt="Cama para Pets">
+                    <h3>Cama Estilosa</h3>
+                    <p>R$ 129,90</p>
+                    <button onclick="adicionarAoCarrinho('Cama Estilosa', 129.90)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/150" alt="Cama para Pets">
+                    <h3>Cama Aquecida</h3>
+                    <p>R$ 159,90</p>
+                    <button onclick="adicionarAoCarrinho('Cama Aquecida', 159.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Na Loja de Pets, oferecemos os melhores produtos para seus amigos de quatro patas. Qualidade e conforto são nossas prioridades!</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contato-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Pets. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
